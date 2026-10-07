@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>池田 健作 | Portfolio</title>
+<meta name="description" content="フロントエンドエンジニア志望・池田健作のポートフォリオ。RoastPlusとまいカゴを掲載しています。">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+<header>
+  <a class="logo" href="#top">Kensaku Ikeda</a>
+  <nav>
+    <a href="#works">Works</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>池田 健作</h1>
+      <p>フロントエンドエンジニア志望。<br>RoastPlus と まいカゴ の2つを載せています。</p>
+    </div>
+  </section>
+
+  <section class="work alt" id="works">
+    <div class="inner">
+      <h2>RoastPlus</h2>
+      <ul class="tags"><li>Next.js</li><li>Firebase</li><li>PWA</li></ul>
+      <p class="lead">職場の記録が紙に頼っていたので、デジタル化して属人化をなくそうと作りました。最初に作ったのは、担当をシャッフルで決める機能です。2025年11月から約8か月、職場で使われ、今は誰でも登録して試せます。</p>
+      <div class="stage">
+        <div class="carousel" role="region" aria-roledescription="カルーセル" aria-label="RoastPlusの画面">
+        <ul class="track">
+          <li class="slide" role="group" aria-roledescription="スライド" aria-label="1 / 4">
+            <img class="frame" src="images/roastplus-home.webp" width="1200" height="900" alt="RoastPlusのホーム。機能の入口となるホーム画面。担当表・スケジュール・在庫・ドリップガイドなどを選ぶ">
+            <p class="caption">ホーム</p>
+          </li>
+          <li class="slide" role="group" aria-roledescription="スライド" aria-label="2 / 4">
+            <img class="frame" src="images/roastplus-assignment.webp" width="1200" height="900" alt="RoastPlusの担当表。掃除・洗い物などの担当を班ごとに割り当てる画面" loading="lazy">
+            <p class="caption">担当表</p>
+          </li>
+          <li class="slide" role="group" aria-roledescription="スライド" aria-label="3 / 4">
+            <img class="frame" src="images/roastplus-clock.webp" width="1200" height="900" alt="RoastPlusの時計。次の作業開始までの残り時間を大きく表示する画面" loading="lazy">
+            <p class="caption">時計</p>
+          </li>
+          <li class="slide" role="group" aria-roledescription="スライド" aria-label="4 / 4">
+            <img class="frame" src="images/roastplus-production.webp" width="1200" height="900" alt="RoastPlusの生産記録。焙煎・パッケージなどの月次の生産記録の画面" loading="lazy">
+            <p class="caption">生産記録</p>
+          </li>
+        </ul>
+        <button class="arrow prev" type="button" aria-label="前の画像">&larr;</button>
+        <button class="arrow next" type="button" aria-label="次の画像">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+      </div>
+      <dl>
+        <dt>役割</dt><dd>企画・設計・実装・運用</dd>
+        <dt>期間</dt><dd>2025.11 — 2026.07</dd>
+        <dt>開発</dt><dd>AIコーディングエージェント（Cursor、Claude Code）を主に使用</dd>
+        <dt>主な機能</dt><dd>担当シャッフル、在庫管理、ドリップガイド</dd>
+      </dl>
+      <ul class="work-links">
+        <li><a href="https://roastplus-72fa6.web.app" target="_blank" rel="noopener">アプリを開く</a></li>
+        <li><a href="https://github.com/IKcoding-jp/RoastPlus" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="work">
+    <div class="inner">
+      <h2>まいカゴ</h2>
+      <ul class="tags"><li>Flutter</li><li>Firebase</li><li>Google Play</li></ul>
+      <p class="lead">母が買い物のとき、予算内に収めるために電卓で計算しながらメモで買うものを確認していました。その行き来をなくすために、リストに入れた瞬間に合計が見えるアプリを作りました。Google Playで公開しています。</p>
+      <div class="stage">
+        <div class="phones">
+          <figure>
+            <img class="frame" src="images/maikago-home.webp" width="480" height="1067" alt="まいカゴのリスト画面。商品ごとの金額と、予算・合計金額が表示される" loading="lazy">
+            <figcaption><strong>ホーム画面</strong>買うものが並び、下に予算と合計が出ます。</figcaption>
+          </figure>
+          <figure>
+            <img class="frame" src="images/maikago-add.webp" width="480" height="1067" alt="まいカゴのリスト追加画面。個数・単価・割引率を入力すると合計が出る" loading="lazy">
+            <figcaption><strong>リストを追加</strong>個数と単価を入れると、その場で合計が出ます。</figcaption>
+          </figure>
+          <figure>
+            <img class="frame" src="images/maikago-recipe.webp" width="480" height="1067" alt="まいカゴのレシピ貼り付け画面。材料を買い物リストにまとめる" loading="lazy">
+            <figcaption><strong>レシピ貼り付け</strong>レシピの文章を貼ると、材料をまとめてリストに入れます。</figcaption>
+          </figure>
+          <figure>
+            <img class="frame" src="images/maikago-camera.webp" width="480" height="1067" alt="まいカゴの値札の撮影画面。値札から商品名と価格を読み取る" loading="lazy">
+            <figcaption><strong>値札を撮影</strong>値札を撮ると、商品名と税込価格を読み取ります。</figcaption>
+          </figure>
+        </div>
+      </div>
+      <dl>
+        <dt>役割</dt><dd>企画・設計・実装・ストア公開・運用</dd>
+        <dt>期間</dt><dd>2025.06 — 運用中</dd>
+        <dt>開発</dt><dd>AIコーディングエージェント（Cursor、Claude Code）を主に使用</dd>
+        <dt>主な機能</dt><dd>リアルタイム合計、値札のカメラ読み取り（OCR）、複数デバイス同期、レシピ取り込み</dd>
+      </dl>
+      <ul class="work-links">
+        <li><a href="https://play.google.com/store/apps/details?id=com.ikcoding.maikago&amp;hl=ja" target="_blank" rel="noopener">Google Playで見る</a></li>
+        <li><a href="https://github.com/IKcoding-jp/Maikago" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>自己紹介</h2>
+    <p>前職で働きながら、まいカゴをバイブコーディングで作ったことをきっかけに、ソフトウェアやアプリの開発に興味を持ちました。それから約1年、学習を続けています。</p>
+    <p>今は基礎を固めるために、Excelを学び直しています。</p>
+    <p>仕事としては、フロントエンドエンジニアや、業務改善に関わる仕事を考えています。</p>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="logo">Contact</div>
+  <ul class="links">
+    <li><a href="mailto:kensaku.ikeda04@gmail.com">kensaku.ikeda04@gmail.com</a></li>
+    <li><a href="https://github.com/IKcoding-jp" target="_blank" rel="noopener">GitHub</a></li>
+  </ul>
+  <small>© 2026 Kensaku Ikeda</small>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

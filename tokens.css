@@ -1,0 +1,67 @@
+/* デザイントークン（承認済み・この値以外は使わない） */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500&family=IBM+Plex+Sans+JP:wght@400;500&family=Kaisei+Decol:wght@400;500;700&display=swap");
+
+:root {
+  /* 色 */
+  --bg: #fcfbf8;
+  --surface: #f3f1ec;
+  --text: #37352e;
+  --text-sub: #6f6f69;
+  --line: #e6e3db;
+  --accent: #c8672e; /* テラコッタ（1色のみ） */
+  --olive: #6b7552; /* 図形用の補助色 */
+
+  /* 書体 */
+  --font-head: "Kaisei Decol", serif;
+  --font-body: "IBM Plex Sans JP", sans-serif;
+  --font-en: "Fraunces", serif;
+
+  /* 角丸（2種のみ）・影なし */
+  --r0: 0;
+  --r1: 12px;
+
+  /* 余白（基準8px） */
+  --s1: 8px;
+  --s2: 16px;
+  --s3: 24px;
+  --s4: 40px;
+  --s5: 64px;
+  --s6: 96px;
+  --section: 144px;
+}
+
+* { box-sizing: border-box; margin: 0; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+}
+img, svg { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+
+/* スクリーンショット差し替え前のプレースホルダー（フラットな面のみ） */
+.shot {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r1);
+  padding: var(--s3);
+  display: grid;
+  gap: var(--s2);
+  align-content: start;
+}
+.shot i { display: block; height: 12px; background: var(--line); border-radius: 6px; }
+.shot i.w60 { width: 60%; }
+.shot i.w40 { width: 40%; }
+.shot i.w80 { width: 80%; }
+.shot i.hi { background: var(--accent); width: 24%; height: 20px; }
+.shot b { display: block; height: 96px; background: var(--bg); border-radius: var(--r1); }
+.shot-label {
+  font-family: var(--font-en);
+  font-size: 13px;
+  color: var(--text-sub);
+  letter-spacing: 0.16em;
+  text-align: center;
+}
